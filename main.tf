@@ -1,4 +1,10 @@
 terraform {
+  cloud {
+    organization = "DevSecOps_Lab_Smash"
+    workspaces {
+      name = "lab2_2_smash"
+    }
+  }
   required_providers {
     aws = {
       source  = "hashicorp/aws"
